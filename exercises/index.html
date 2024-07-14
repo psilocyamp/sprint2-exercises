@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sprint2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 1 -->
+    <div class="border p-4 rounded-lg shadow-lg bg-white">
+      <div
+        id="square"
+        class="w-48 h-48 bg-gray-300 flex items-center justify-center text-gray-700 text-xl mb-4"
+      ></div>
+      <button
+        id="changeColorButton"
+        class="px-4 py-2 bg-yellow-500 text-black rounded-lg"
+      >
+        Change
+      </button>
+    </div>
+
+    <!-- 2 -->
+    <div class="border p-4 rounded-lg shadow-lg bg-white">
+      <div
+        id="square2"
+        class="w-48 h-48 bg-gray-300 flex items-center justify-center text-gray-700 text-xl mb-4"
+      ></div>
+      <input
+        type="text"
+        id="textInput"
+        class="px-4 py-2 border rounded-lg mb-4"
+        placeholder="type here"
+      />
+      <button
+        id="clearButton"
+        class="px-4 py-2 bg-red-500 text-white rounded-lg mb-2"
+      >
+        Clear
+      </button>
+    </div>
+    <!-- //3 -->
+    <div class="border p-6 rounded-lg shadow-lg bg-white max-w-md w-full">
+      <h1 class="text-2xl font-bold mb-4">Calculadora de IMC</h1>
+      <div class="mb-4">
+        <label for="weightInput" class="block text-sm font-medium text-gray-700"
+          >Peso (kg)</label
+        >
+        <input
+          type="number"
+          id="weightInput"
+          class="px-4 py-2 border rounded-lg w-full"
+          placeholder="Ingresa tu peso"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="heightInput" class="block text-sm font-medium text-gray-700"
+          >Altura (cm)</label
+        >
+        <input
+          type="number"
+          id="heightInput"
+          class="px-4 py-2 border rounded-lg w-full"
+          placeholder="Ingresa tu altura"
+        />
+      </div>
+      <button
+        id="calculateButton"
+        class="px-4 py-2 bg-blue-500 text-white rounded-lg w-full mb-4"
+      >
+        Calculate
+      </button>
+      <div class="mb-4">
+        <label for="bmiResult" class="block text-sm font-medium text-gray-700"
+          >Tu IMC</label
+        >
+        <input
+          type="text"
+          id="bmiResult"
+          class="px-4 py-2 border rounded-lg w-full"
+          readonly
+        />
+      </div>
+    </div>
+    <!-- 4 -->
+    <div id="divMonedero" class="p-8 rounded-lg shadow-lg w-96">
+      <h2 class="text-2xl font-bold mb-4 text-center">Currency converter</h2>
+    
+<div class="mb-4">
+    <label for="localCurrency" class="block text-gray-700">Monto moneda local:</label>
+<input type="number" id="monto" placeholder="500"class="border border-gray-300 p-2 w-full">
+<div>
+
+  <div class="mb-4">
+    <label for="localCurrency" class="block text-gray-700">Monto dolares:</label>
+<input class="inputDolarr border border-gray-300 p-2 w-full" readonly id="inputDeDolaress"  type="number" placeholder="1" >
+<div>
+<button type="submit" id="botonEnviar" class="font-serif p-2 border border-cyan-700 rounded-md">Convert</button>
+<button type="button"id="borrar" class="font-serif p-2 border border-cyan-700 rounded-md">Reset</button>
+</div>
+</div>
+
+
+    </div>
+    <script src="./datos.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

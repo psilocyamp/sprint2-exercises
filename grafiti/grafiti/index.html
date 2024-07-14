@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color Square</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>  
+
+    <main class="flex flex-wrap">  
+        <section id="section-contenedor" class="flex flex-wrap justify-center  w-1/3 h-screen items-center bg-slate-700">
+                
+                <form action="" id="formulario" class="w-11/12  h-5/6 bg-yellow-200 flex  items-center justify-around flex-wrap">
+                    <div class="flex flex-col">
+                        <label for="inputCapturar">ingrese un texto</label>
+                        <input id="inputCapturar" type="text"> 
+                        <label for="inputColorr">escoja un color</label>
+                        <input type="color" id="inputColorr" class="rounded-md w-[80px] h-[50px] p-[5px]">
+                        <fieldset class="flex flex-col">
+                            <legend>Tipo De Letra</legend>
+                            <label>
+                                <input type="radio" id="entradaGrafiti" name="tipoLetra" value="tipoDeLetra"> Grafitti
+                            </label>
+                            <label>
+                                <input type="radio" id="entradaPoster" name="tipoLetra" value="tipoDeLetra"> Poster
+                            </label>                           
+                        </fieldset>
+                    </div> 
+                    
+                    <button id="submitButton" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 border border-black rounded">Submit</button>
+                </form>
+        </section>
+
+        <section id="wall" class="w-2/3 flex flex-wrap justify-center items-center gap-[50px] h-screen bg-red-300">
+                
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="./grafiti.js"></script>
+</body>
+</html>
